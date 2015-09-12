@@ -12,7 +12,7 @@ Class Formulario{
 	private $medicoDiagnostico;
 
 	function obterIdade(){
-		return date("Y") - $this->pacienteNascimento;
+		return $this->consultaData - $this->pacienteNascimento;
 	}
 	
 	function obterDuracaoConsulta(){
